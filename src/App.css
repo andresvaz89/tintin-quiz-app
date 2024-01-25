@@ -6,6 +6,9 @@
   flex-direction: column;
 }
 
+.App h1 {
+  text-align: center;
+}
 .Menu {
   width: 500px;
   height: 500px;
