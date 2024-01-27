@@ -4,8 +4,10 @@ import './App.css';
 import MainMenu from './Components/MainMenu';
 import EndScreen from './Components/EndScreen';
 import Quiz from './Components/Quiz';
+import NavBar from './Components/NavBar';
 
 import { QuizContext } from './Helpers/Context';
+import AddQuestion from './Components/AddQuestion';
 
 function App() {
   const [gameState, setGameState] = useState('menu');
@@ -17,6 +19,7 @@ function App() {
       <QuizContext.Provider
         value={{ gameState, setGameState, score, setScore }}
       >
+        <NavBar />
         {gameState === 'menu' && <MainMenu />}
         {gameState === 'quiz' && <Quiz />}
         {gameState === 'endScreen' && <EndScreen />}
