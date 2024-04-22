@@ -52,6 +52,12 @@
   cursor: pointer;
 }
 
+.Menu button:hover,
+.Quiz button:hover,
+.EndScreen button:hover {
+  background-color: rgb(58, 169, 30);
+}
+
 .Menu,
 .Quiz {
   color: white;
