@@ -26,6 +26,7 @@ const Quiz = () => {
       <h1>{Questions[currQuestion].prompt}</h1>
       <div className="options">
         <button
+          className="option-btn"
           onClick={() => {
             setOptionChosen('A');
           }}
@@ -33,6 +34,7 @@ const Quiz = () => {
           {Questions[currQuestion].optionA}
         </button>
         <button
+          className="option-btn"
           onClick={() => {
             setOptionChosen('B');
           }}
@@ -40,6 +42,7 @@ const Quiz = () => {
           {Questions[currQuestion].optionB}
         </button>
         <button
+          className="option-btn"
           onClick={() => {
             setOptionChosen('C');
           }}
@@ -47,6 +50,7 @@ const Quiz = () => {
           {Questions[currQuestion].optionC}
         </button>
         <button
+          className="option-btn"
           onClick={() => {
             setOptionChosen('D');
           }}
@@ -56,9 +60,13 @@ const Quiz = () => {
       </div>
 
       {currQuestion == Questions.length - 1 ? (
-        <button onClick={finishQuiz}>Finish Quiz</button>
+        <button className="next-btn" onClick={finishQuiz}>
+          Finish Quiz
+        </button>
       ) : (
-        <button onClick={nextQuestion}>Next Question</button>
+        <button className="next-btn" onClick={nextQuestion}>
+          Next Question
+        </button>
       )}
     </div>
   );

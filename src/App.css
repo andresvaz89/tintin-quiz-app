@@ -53,9 +53,20 @@
 }
 
 .Menu button:hover,
-.Quiz button:hover,
 .EndScreen button:hover {
-  background-color: rgb(58, 169, 30);
+  background-color: chocolate;
+}
+
+.option-btn:hover {
+  background-color: burlywood;
+}
+.option-btn:focus {
+  background-color: greenyellow;
+}
+
+.next-btn:hover {
+  background-color: rgb(40, 64, 161);
+  color: white;
 }
 
 .Menu,
